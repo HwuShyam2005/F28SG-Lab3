@@ -86,6 +86,9 @@ public class LinkedList {
 		}
 	}
 
+	/*
+	 * See https://web.microsoftstream.com/video/5a15e714-bf98-4bf6-9124-573638723795
+	 */
 	public int removeAtTail() {
 		if (headNode == null) {
 			return -1;
