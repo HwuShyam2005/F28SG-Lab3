@@ -103,11 +103,17 @@ public class LinkedList {
 	 * PART 2: complete the following methods
 	 */
 
+	/** The number of nodes in the linked list, and 0 for an empty linked list. 
+	 * @return the number of nodes in the linked list
+	 */
 	public int size(){
 		return -1; // dummy value to remove
 	}
 	
 	
+	/** The sum of all integer nodes in the linked list, and 0 for an empty linked list.
+	 * @return the sum of all nodes in the linked list
+	 */
 	public int total(){ 
 		return -1; // dummy value to remove
 	}
