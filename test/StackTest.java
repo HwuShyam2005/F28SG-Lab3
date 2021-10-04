@@ -20,7 +20,13 @@ public class StackTest {
 		assertEquals(1,st.size());
 		assertEquals(10,st.top());
 	}
-
+	
+	@Test
+	public void testPushPopEmpty() {
+		st.push(10);
+		st.pop();
+		assertTrue(st.isEmpty());
+	}
 
 	@Test
 	public void testTop() {
@@ -30,7 +36,13 @@ public class StackTest {
 		st.pop();
 		assertEquals(10,st.top());
 	}
-
+	
+	@Test
+	public void testPushTopNotEmpty() {
+		st.push(10);
+		st.top();
+		assertFalse(st.isEmpty());
+	}
 	
 	@Test
 	public void testPop() {
@@ -47,5 +59,9 @@ public class StackTest {
 	  st.pop();
 	}
 	
+	@Test(expected = StackException.class)  
+	public void testEmptyTop() {  
+	  st.top();
+	}
 	
 }
