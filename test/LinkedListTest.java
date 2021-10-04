@@ -26,6 +26,12 @@ public class LinkedListTest {
 		// test l.size() after adding some numbers to the linked list
 		fail("not implemented yet");
 	}
+	
+	@Test
+	public void testSizeTwice() {
+		// test l.size() twice after adding some numbers to the linked list
+		fail("not implemented yet");
+	}
 
 	@Test
 	public void testTotalEmpty() {
@@ -36,6 +42,12 @@ public class LinkedListTest {
 	@Test
 	public void testTotalMany() {
 		// test l.total() after adding some numbers to the linked list
+		fail("not implemented yet");
+	}
+	
+	@Test
+	public void testTotalTwice() {
+		// test l.total() twice after adding some numbers to the linked list
 		fail("not implemented yet");
 	}
 	
