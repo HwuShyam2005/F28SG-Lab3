@@ -4,7 +4,7 @@ class StackException extends RuntimeException{
 		}
 }
 
-public class Stack {
+public class Stack implements StackADT {
 	
 	private class Node{
 		int element;
