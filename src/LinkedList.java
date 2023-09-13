@@ -103,7 +103,12 @@ public class LinkedList {
 	 * PART 2: complete the following methods
 	 */
 
-	/** The number of nodes in the linked list, and 0 for an empty linked list. 
+	/** The number of nodes in the linked list, and 0 for an empty linked list.
+	 * 
+	 * TODO Where N is the length of linked list the complexity is:
+	 *
+	 * O(?)
+	 * 
 	 * @return the number of nodes in the linked list
 	 */
 	public int size(){
@@ -112,6 +117,11 @@ public class LinkedList {
 	
 	
 	/** The sum of all integer nodes in the linked list, and 0 for an empty linked list.
+	 *
+	 * TODO Where N is the length of linked list the complexity is:
+	 *
+	 * O(?)
+	 * 
 	 * @return the sum of all nodes in the linked list
 	 */
 	public int total(){ 
