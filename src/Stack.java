@@ -52,39 +52,54 @@ public class Stack implements StackADT {
 	 * 
 	 * @param o the integer to add to the top of the stack
 	 */
-	public void push(int o){
+	public void push(int o) {
+	    // Create a new node with value o, and set its next node to the current top
+	    Node newnode = new Node(o, top);
+	    
+	    // Set the top reference to the new node (making it the new top)
+	    top = newnode;
+	    
+	    // Increment the size of the list (since a new element has been added)
+	    size++;
+	}
 
+	public int pop() throws StackException {
+	    // Checking if the stack is empty
+	    if (isEmpty()) {
+	        // If empty, throw a StackException
+	        throw new StackException("Stack is Empty");
+	    } else {
+	        // If not empty:
+	        
+	        // Create a temporary variable and store the value of the top element in it
+	        int temp = top.getValue();
+	        
+	        // Change the top reference to the next node (simulating popping)
+	        top = top.getNext();
+	        
+	        // Decrement the size of the stack
+	        size--;
+	        
+	        // Return the value of the popped item
+	        return temp;
+	    }
 	}
-	
-	// part 3: complete
-	/** Removes an element from the top of the stack
-	 * 
-	 * TODO Where N is the number of elements in the stack the complexity is:
-	 *
-	 * O(?)
-	 *
-	 * @return the integer that was at the top of the stack
-	 * @throws StackException if the stack is empty
-	 */
-	public int pop() throws StackException{
-		return -1; // dummy remove
-	}
-	
-	// part 3: complete
-	/** Returns the integer at the top of the stack
-	 * 
-	 * TODO Where N is the number of elements in the stack the complexity is:
-	 *
-	 * O(?)
-	 * 
-	 * @return the integer at the top of the stack
-	 * @throws StackException is the stack is empty
-	 */
-	public int top() throws StackException{
-		return -1; // dummy remove
-	}
-	
-	
-	
 
+	public int top() throws StackException {
+	    // Checking if the stack is empty
+	    if (isEmpty()) {
+	        // If empty, throw a StackException
+	        throw new StackException("Stack is Empty");
+	    } else {
+	        // If not empty:
+	        
+	        // Create a temporary variable and store the value of the top element in it
+	        int temp = top.getValue();
+	        
+	        // Return the top value
+	        return temp;
+	    }
+	}
 }
+
+	

@@ -18,37 +18,57 @@ public class LinkedListTest {
 	@Test
 	public void testSizeEmpty() {
 		// test l.size() for an empty linked list
-		fail("not implemented yet");
+		assertEquals(0,l.size());
 	}
 
 	@Test
 	public void testSizeMany() {
 		// test l.size() after adding some numbers to the linked list
-		fail("not implemented yet");
+		l.addAtHead(1);
+		l.addAtHead(2);
+		l.addAtHead(3);
+		assertEquals(3,l.size());
 	}
 	
 	@Test
 	public void testSizeTwice() {
 		// test l.size() twice after adding some numbers to the linked list
-		fail("not implemented yet");
+		l.addAtHead(1);
+		l.addAtHead(2);
+		l.addAtHead(3);
+		assertEquals(3,l.size());
+		l.addAtHead(4);
+		l.addAtHead(5);
+		l.addAtHead(6);
+		assertEquals(6,l.size());
 	}
 
 	@Test
 	public void testTotalEmpty() {
 		// test l.total() for an empty linked list
-		fail("not implemented yet");
+		assertEquals(0,l.total());
 	}
 
 	@Test
 	public void testTotalMany() {
 		// test l.total() after adding some numbers to the linked list
-		fail("not implemented yet");
+		l.addAtHead(1);
+		l.addAtHead(2);
+		l.addAtHead(3);
+		assertEquals(6,l.total());
 	}
 	
 	@Test
 	public void testTotalTwice() {
 		// test l.total() twice after adding some numbers to the linked list
-		fail("not implemented yet");
+		l.addAtHead(1);
+		l.addAtHead(2);
+		l.addAtHead(3);
+		assertEquals(6,l.total());
+		l.addAtHead(4);
+		l.addAtHead(5);
+		l.addAtHead(6);
+		assertEquals(21,l.total());
 	}
 	
 	/*

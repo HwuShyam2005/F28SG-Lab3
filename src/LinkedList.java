@@ -112,8 +112,25 @@ public class LinkedList {
 	 * @return the number of nodes in the linked list
 	 */
 	public int size(){
-		return -1; // dummy value to remove
-	}
+		    // Initialize a pointer to the head node
+		    LinkedList.Node current = headNode;
+		    
+		    // Create a counter to keep track of the size
+		    int size = 0;
+		    
+		    // Iterate through the linked list and count the elements
+		    while (current != null) {
+		        // Move to the next node
+		        current = current.getNextNode();
+		        
+		        // Increment the counter
+		        size++;
+		    }
+		    
+		    // Return the size of the linked list
+		    return size;
+		}
+
 	
 	
 	/** The sum of all integer nodes in the linked list, and 0 for an empty linked list.
@@ -124,10 +141,27 @@ public class LinkedList {
 	 * 
 	 * @return the sum of all nodes in the linked list
 	 */
-	public int total(){ 
-		return -1; // dummy value to remove
+	public int total() {
+	    // Create a variable to store the total
+	    int total = 0;
+
+	    // Initialize a pointer to the head node
+	    LinkedList.Node current = headNode;
+
+	    // Iterate through the linked list and add the elements
+	    while (current != null) {
+	        // Add the value of the current node to the total
+	        total += current.getValue();
+
+	        // Move to the next node
+	        current = current.getNextNode();
+	    }
+
+	    // Return the total sum
+	    return total;
 	}
 
+	
 	/*
 	 * Optional: reverse the linked lists so that the first element becomes
 	 * the last, the second becomes the second last, and so on.
